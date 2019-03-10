@@ -6,8 +6,12 @@ file:   __init__.py
 time:   2019/3/10.20:11
 """
 
-from flask import Flask,render_template
+from flask import Flask
 
 app2 = Flask(__name__)
+
+app2.config.from_object('config')
+
 from app import views
+
 
